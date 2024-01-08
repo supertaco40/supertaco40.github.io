@@ -1,0 +1,147 @@
+body {
+  /* font: 0; */
+  font-family: 'Roboto Mono', monospace;
+  background-color: #ef6351;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f38375;
+  padding: 19px;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+.main-name {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.main {
+  margin: 19px 50px;
+  background-color: #f38375;
+  padding-top: 15px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 10px;
+}
+
+.main__title {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.search-block__input {
+  background: #fbc3bc;
+  border: 1px solid #000000;
+  border-radius: 11px;
+  font-size: 32px;
+  width: calc(100% - 60px);
+}
+
+.search-block__icon {
+  height: 40px;
+  width: 40px;
+  vertical-align: bottom;
+  margin-top: 11px;
+}
+
+.list__entry {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.entry__image {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.entry__right_column {
+  margin: 10px 0 0 auto;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.entry__name {
+  text-decoration: none;
+  color: #000000;
+}
+
+.list__entry > a,
+span {
+  margin-top: 10px;
+}
+
+.pages__button {
+  border-radius: 30%;
+  background-color: #fbc3bc;
+}
+
+.not-found__title {
+  text-align: center;
+}
+
+.not-found__image {
+  width: max-content;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+@media (max-width: 680px) {
+  .main-name {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-name {
+    font-size: 20px;
+  }
+
+  .main {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .main__title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .search-block__input {
+    font-size: 20px;
+  }
+
+  .search-block__icon {
+    height: 27px;
+    width: 27px;
+  }
+
+  .header__link {
+    font-size: 16px;
+  }
+
+  .entry__name {
+    font-size: 16px;
+  }
+}

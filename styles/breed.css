@@ -1,0 +1,41 @@
+.breed__name {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.breed__description {
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.breed__characteristics {
+  display: block;
+  margin-top: 20px;
+}
+
+.breed__image {
+  width: max-content;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 400px;
+}
+
+@media (max-width: 680px) {
+  .breed__name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breed__characteristics {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .breed__description {
+    font-size: 14px;
+    margin: 0;
+  }
+}
