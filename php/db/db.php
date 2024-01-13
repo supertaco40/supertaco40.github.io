@@ -36,8 +36,8 @@ function get_all_breeds()
         'SELECT 
             Breed.id,
             Breed.name,
-            Breed.description
-            Breed.metadescription
+            Breed.description,
+            Breed.metadescription,
             Breed.keyword
         FROM Breed;'
     );
