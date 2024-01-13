@@ -8,6 +8,14 @@ const renderBreed = async () => {
   const result = await fetch(`${base_url}/breeds/all.php`);
   const breeds = await result.json();
   const breed = breeds.filter((breed_) => breed_.id == breed_id)[0];
+  let meta = document.createElement('meta');
+  meta.name="description";
+  meta.content = breed.metadescription;
+  document.getElementsByTagName('head')[0].appendChild(meta);
+  let meta = document.createElement('meta');
+  meta.name="keyword";
+  meta.content = breed.keyword;
+  document.getElementsByTagName('head')[0].appendChild(meta);
 
   const breedImage = document.getElementById('breed-image');
   breedImage.setAttribute('src', `./images/breeds/${breed.name}.jpg`);
