@@ -6,6 +6,7 @@ class Breed
     public $name;
     public $description;
     public $metadescription;
+    public $keyword;
 
     function __construct($id, $name, $description, $metadescription, $keyword)
     {
