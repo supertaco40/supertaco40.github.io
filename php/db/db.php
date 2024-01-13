@@ -65,7 +65,7 @@ function get_all_characteristics()
     );
     $array = array();
     while ($row = pg_fetch_row($result)) {
-        $entry = new Characteristic($row[0], $row[1], $row[2]);
+        $entry = new Characteristic($row[0], $row[1], $row[2], $row[3], $row[4]);
         $array[] = $entry;
     }
     pg_close($connect);
