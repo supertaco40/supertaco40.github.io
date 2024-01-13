@@ -59,6 +59,8 @@ function get_all_characteristics()
             Characteristic.id,
             Characteristic.name,
             Characteristic.description
+            Characteristic.metadescription
+            Characteristic.keyword
         FROM Characteristic;'
     );
     $array = array();
