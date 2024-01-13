@@ -14,6 +14,6 @@ class Characteristic
         $this->name = $name;
         $this->description = $description;
         $this->metadescription = $metadescription;
-        $this->keyword = %keyword;
+        $this->keyword = $keyword;
     }
 }
