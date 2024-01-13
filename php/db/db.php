@@ -80,7 +80,9 @@ function get_characteristics($id)
         "SELECT 
             Characteristic.id,
             Characteristic.name,
-            Characteristic.description
+            Characteristic.description,
+            Characteristic.metadescription,
+            Characteristic.keyword
         FROM Characteristic 
         JOIN Breed_Characteristics ON Breed_Characteristics.characteristicId=Characteristic.id
         WHERE Breed_Characteristics.breedId=$id;"
@@ -102,7 +104,9 @@ function get_breeds($id)
         "SELECT 
             Breed.id,
             Breed.name,
-            Breed.description
+            Breed.description,
+            Breed.metadescription,
+            Breed.keyword
         FROM Breed 
         JOIN Breed_Characteristics ON Breed_Characteristics.breedId=Breed.id
         WHERE Breed_Characteristics.characteristicId=$id;"
