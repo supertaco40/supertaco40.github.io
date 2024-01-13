@@ -148,10 +148,8 @@ span {
 }
 @media print {
   head,
-  .menu-block,
-  .footer-block,
-  .menu-icon,
-  .prompt-background {
+  .main__search-block,
+  #pages-div {
     display: none !important;
   }
 
