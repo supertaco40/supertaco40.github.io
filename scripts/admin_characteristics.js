@@ -17,6 +17,8 @@ function getLogin() {
 }
 function getForm() {
   return {
+    metadescription: document.getElementById('metadescription').value ?? undefined,
+    keyword: document.getElementById('keyword').value ?? undefined,
     name: document.getElementById('name').value ?? undefined,
     description: document.getElementById('description').value ?? undefined,
   };
