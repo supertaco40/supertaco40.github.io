@@ -58,8 +58,8 @@ function get_all_characteristics()
         'SELECT 
             Characteristic.id,
             Characteristic.name,
-            Characteristic.description
-            Characteristic.metadescription
+            Characteristic.description,
+            Characteristic.metadescription,
             Characteristic.keyword
         FROM Characteristic;'
     );
