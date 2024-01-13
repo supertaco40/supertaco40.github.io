@@ -8,14 +8,16 @@ const renderCharacteristic = async () => {
   const result = await fetch(`${base_url}/characteristics/all.php`);
   const characteristics = await result.json();
   const characteristic = characteristics.filter((characteristic) => characteristic.id == characteristic_id)[0];
-  let meta = document.createElement('meta');
-  meta.name="description";
-  meta.content = breed.metadescription;
-  document.getElementsByTagName('head')[0].appendChild(meta);
-  let meta = document.createElement('meta');
-  meta.name="keyword";
-  meta.content = breed.keyword;
-  document.getElementsByTagName('head')[0].appendChild(meta);
+
+  let metadescription = document.createElement('meta');
+  metadescription.name="description";
+  metadescription.content = breed.metadescription;
+  document.getElementsByTagName('head')[0].appendChild(metadescription);
+  
+  let metakeyword = document.createElement('meta');
+  metakeyword.name="keyword";
+  metakeyword.content = breed.keyword;
+  document.getElementsByTagName('head')[0].appendChild(metakeyword);
 
   const image = document.getElementById('characteristic-image');
   image.setAttribute('src', `./images/characteristics/${characteristic.name}.jpg`);
