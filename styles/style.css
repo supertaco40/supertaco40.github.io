@@ -146,3 +146,20 @@ span {
     font-size: 16px;
   }
 }
+@media print {
+  head,
+  .menu-block,
+  .footer-block,
+  .main__search-block,
+  #pages-div,
+  .menu-icon,
+  .prompt-background {
+    display: none !important;
+  }
+
+  body,
+  header,
+  main {
+    background-color: #ffffff;
+  }
+}
