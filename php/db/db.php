@@ -37,6 +37,8 @@ function get_all_breeds()
             Breed.id,
             Breed.name,
             Breed.description
+            Breed.metadescription
+            Breed.keyword
         FROM Breed;'
     );
     $array = array();
