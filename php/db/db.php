@@ -43,7 +43,7 @@ function get_all_breeds()
     );
     $array = array();
     while ($row = pg_fetch_row($result)) {
-        $entry = new Breed($row[0], $row[1], $row[2], $row[3], $row[4])
+        $entry = new Breed($row[0], $row[1], $row[2], $row[3], $row[4]);
         $array[] = $entry;
     }
     pg_close($connect);
