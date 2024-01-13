@@ -38,4 +38,7 @@ const renderBreed = async () => {
   breedCharacteristics.innerHTML += `</ul>`;
 };
 
-window.addEventListener('DOMContentLoaded', renderBreed);
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('loaded');
+  renderBreed();
+});
