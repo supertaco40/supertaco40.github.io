@@ -19,6 +19,9 @@ const renderBreed = async () => {
   metakeyword.content = breed.keyword;
   document.getElementsByTagName('head')[0].appendChild(metakeyword);
 
+  //change page title
+  document.title = `Порода ${breed.name}`;
+
   const breedImage = document.getElementById('breed-image');
   breedImage.setAttribute('src', `./images/breeds/${breed.name}.jpg`);
 
