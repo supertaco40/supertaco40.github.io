@@ -18,6 +18,9 @@ const renderCharacteristic = async () => {
   metakeyword.name="keyword";
   metakeyword.content = characteristic.keyword;
   document.getElementsByTagName('head')[0].appendChild(metakeyword);
+  
+  //change page title
+  document.title = `Характеристика ${characteristic.name}`;
 
   const image = document.getElementById('characteristic-image');
   image.setAttribute('src', `./images/characteristics/${characteristic.name}.jpg`);
