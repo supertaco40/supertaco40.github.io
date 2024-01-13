@@ -6,7 +6,7 @@ class Breed
     public $name;
     public $description;
 
-    function __construct($id, $name, $description)
+    function __construct($id, $name, $description, $metadescription, $keyword)
     {
         $this->id = $id;
         $this->name = $name;
