@@ -11,12 +11,12 @@ const renderCharacteristic = async () => {
 
   let metadescription = document.createElement('meta');
   metadescription.name="description";
-  metadescription.content = breed.metadescription;
+  metadescription.content = characteristic.metadescription;
   document.getElementsByTagName('head')[0].appendChild(metadescription);
   
   let metakeyword = document.createElement('meta');
   metakeyword.name="keyword";
-  metakeyword.content = breed.keyword;
+  metakeyword.content = characteristic.keyword;
   document.getElementsByTagName('head')[0].appendChild(metakeyword);
 
   const image = document.getElementById('characteristic-image');
